@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Animations</title>
+
+  </head>
+  <body>
+
+    <!--Main Header -->
+    <header>
+      <h1>CSS ANIMATIONS</h1>
+    </header>
+    <!-- Main Navigation -->
+    <nav>
+      <ul>
+        <li>
+           <a href="#" class="active">CSS</a>
+        </li>
+        <li>
+           <a href="#">HTML</a>
+        </li>
+        <li>
+           <a href="#">JAVASCRIPT</a>
+        </li>
+        <li>
+           <a href="#">PHP</a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <!-- Sidebar Section -->
+
+    <aside>
+      <ul>
+        <li>
+          <a href="#">Types of Animations Attributes</a>
+        </li>
+        <li>
+          <a href="#">Animation Delay</a>
+        </li>
+        <li>
+          <a href="#">Animation Direction</a>
+        </li>
+        <li>
+          <a href="#">Animation Duration</a>
+        </li>
+        <li>
+          <a href="#">Animation Iteration Count</a>
+        </li>
+        <li>
+          <a href="#">Animation Fill Mode</a>
+        </li>
+        <li>
+          <a href="#">Animation Play State</a>
+        </li>
+        <li>
+          <a href="#">Animation Timing Function</a>
+        </li>
+      </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <section>
+       <details>
+         <summary>Types of Animations</summary>
+         <article>
+            <h3>Animation</h3>
+            <p>
+              An animation lets an element gradually change from one style to another.
+              You can change as many CSS properties you want, as many times you want.
+              To use CSS animation, you must first specify some keyframes for the animation.
+            </p>
+            <h3>Types of Animations</h3>
+            <ul>
+              <li>Animation Delay</li>
+              <li>Animation Direction</li>
+              <li>Animation Duration</li>
+              <li>Animation Iteration Count</li>
+              <li>Animation Fill Mode</li>
+              <li>Animation Play State</li>
+              <li>Animation Timing Function</li>
+            </ul>
+         </article>
+
+       </details>
+
+       <!-- Animation Delay -->
+       <details>
+         <summary>Animation Delay</summary>
+         <article>
+            <h3>Animation Delay</h3>
+            <p>The animation-delay CSS property specifies the amount of time to wait from applying the animation to
+              an element before beginning to perform the animation. The animation can start later,
+              immediately from its beginning, or immediately and partway through the animation.
+            </p>
+         </article>
+            <h3>Code</h3>
+            <p>
+
+                    div {  <br>
+                      width: 100px; <br>
+                      height: 100px;<br>
+                      background: yellow;<br>
+                      position: relative;<br>
+                      animation: animation1 5s infinite;<br>
+                      animation-delay: 5s;<br>
+                    }<br>
+
+                    @keyframes animation1{<br>
+                      from {left: 0px;}<br>
+                      to {left: 200px;}<br>
+                    }<br>
+              </p>
+              <p>Start the animation after 5 seconds:</p>
+              <div class="animation1"></div>
+         </details>
+
+       <!-- Animation Direction-->
+       <details>
+         <summary>Animation Direction</summary>
+         <article>
+            <h3>Animation Direction</h3>
+            <p>
+              The CSS animation-direction property allows you to specify which direction an animation will be played in.
+              You can specify whether or not the animation should play in reverse on some or all cycles
+            </p>
+            </article>
+            <h3>Animation Direction(Alternate)</h3>
+            <h3>Code</h3>
+            <p>
+              div {  <br>
+                width: 100px; <br>
+                height: 100px;<br>
+                background: yellow;<br>
+                position: relative;<br>
+                animation: animation2 5s infinite;<br>
+                animation-direction: alternate;<br>
+
+              }<br>
+
+              @keyframes animation2{<br>
+                from {left: 0px;}<br>
+                to {left: 200px;}<br>
+              }<br>
+            </p>
+
+            <p>Play the animation forwards first, then backwards:</p>
+           <div class="animation2"></div>
+
+           <h3>Animation Direction(Normal)</h3>
+           <h3>Code</h3>
+
+           <p>
+             div {  <br>
+               width: 100px; <br>
+               height: 100px;<br>
+               background: yellow;<br>
+               position: relative;<br>
+               animation: animation21 5s infinite;<br>
+               animation-direction: normal;<br>
+
+             }<br>
+
+             @keyframes animation21{<br>
+               from {left: 0px;}<br>
+               to {left: 200px;}<br>
+             }<br>
+           </p>
+
+           <p>Play Normal Animation</p>
+          <div class="animation21"></div>
+
+          <h3>Animation Direction(Alternate-Reverse)</h3>
+          <h3>Code</h3>
+
+          <p>
+            div {
+                    width: 100px;<br>
+                    height: 100px;<br>
+                    background-color: red;<br>
+                    position: relative;<br>
+                    animation: animation22 5s infinite;<br>
+                    animation-direction: alternate-reverse;<br>
+                  }<br>
+
+                  @keyframes animation22 {<br>
+                    0%   {background-color:red; left:0px; top:0px;}<br>
+                    25%  {background-color:yellow; left:200px; top:0px;}<br>
+                    50%  {background-color:blue; left:200px; top:200px;}<br>
+                    75%  {background-color:green; left:0px; top:200px;}<br>
+                    100% {background-color:red; left:0px; top:0px;}<br>
+                  }<br>
+          </p>
+
+          <p>Play Animation Alternate-Reverse</p>
+         <div class="animation22"></div>
+
+         <h3>Animation Direction(Reverse)</h3>
+         <h3>Code</h3>
+
+         <p>
+           div {
+                   width: 100px;<br>
+                   height: 100px;<br>
+                   background-color: red;<br>
+                   position: relative;<br>
+                   animation: animation23 5s infinite;<br>
+                   animation-direction: reverse;<br>
+                 }<br>
+
+                 @keyframes animation23 {<br>
+                   0%   {background-color:red; left:0px; top:0px;}<br>
+                   25%  {background-color:yellow; left:200px; top:0px;}<br>
+                   50%  {background-color:blue; left:200px; top:200px;}<br>
+                   75%  {background-color:green; left:0px; top:200px;}<br>
+                   100% {background-color:red; left:0px; top:0px;}<br>
+                 }<br>
+
+         </p>
+
+         <p>Play Animation Reverse</p>
+        <div class="animation23"></div>
+
+
+       </details>
+
+      <!-- Animation Duration -->
+      <details>
+        <summary>Animation Duration</summary>
+        <article>
+          <h3>Animation Duration</h3>
+          <p>The CSS animation-duration property allows you to specify how long your animation will take to complete one cycle. ...
+            For example, a value of 3s will result in an animation running for 3 seconds.
+            By changing the value of the animation-duration property, you effectively change the speed at which your animation runs.</p>
+        </article>
+        <h3>Code</h3>
+        <p>
+          div {  <br>
+            width: 100px; <br>
+            height: 100px;<br>
+            background: yellow;<br>
+            position: relative;<br>
+            animation: animation3 5s infinite;<br>
+            animation-duration: 5s;<br>
+          }<br>
+
+          @keyframes animation3{<br>
+            from {left: 0px;}<br>
+            to {left: 200px;}<br>
+          }<br>
+
+        </p>
+        <p>Animation should complete one cycle in 5 seconds:</p>
+      <div class="animation3">
+      </div>
+
+      </details>
+
+      <!-- Animation Iteration Count -->
+      <details>
+        <summary>Animation Iteration Count</summary>
+        <article>
+          <h3>Animation Iteration Count</h3>
+          <p>The animation-iteration-count CSS property sets the number of times an animation sequence should be played before stopping.
+            If multiple values are specified, each time the animation is played the next value in the list is used,
+            cycling back to the first value after the last one is used.</p>
+        </article>
+        <h3>Code</h3>
+        <p>
+          div {  <br>
+            width: 100px; <br>
+            height: 100px;<br>
+            background: yellow;<br>
+            position: relative;<br>
+            animation: animation4 3s;<br>
+            animation-iteration-count: 5;<br>
+          }<br>
+
+          @keyframes animation4{<br>
+            from {left: 0px;}<br>
+            to {left: 200px;}<br>
+          }<br>
+
+        </p>
+        <p>Play the animation 5 times:</p>
+         <div class="animation4"></div>
+
+        <h3>Animation Iteration Count(Infinite)</h3>
+        <h3>Code</h3>
+        <p>
+          div {  <br>
+            width: 100px; <br>
+            height: 100px;<br>
+            background: yellow;<br>
+            position: relative;<br>
+            animation: animation41 3s;<br>
+            animation-iteration-count: infinite;<br>
+          }<br>
+
+          @keyframes animation41{<br>
+            from {left: 0px;}<br>
+            to {left: 200px;}<br>
+          }<br>
+
+        </p>
+        <p>Play the animation Infinite times:</p>
+         <div class="animation41"></div>
+      </details>
+
+      <!-- Animation Fill Mode -->
+      <details>
+        <summary>Animation Fill Mode</summary>
+        <article>
+          <h3>Animation Fill Mode</h3>
+          <p>The animation-fill-mode property specifies a style for the element when the animation is not playing (before it starts, after it ends, or both).
+            CSS animations do not affect the element before the first keyframe is played or after the last keyframe is played.
+            The animation-fill-mode property can override this behavior.</p>
+        </article>
+        <h3>Code</h3>
+        <p>
+          div {  <br>
+            width: 100px; <br>
+            height: 100px;<br>
+            background: yellow;<br>
+            position: relative;<br>
+            animation: animation5 3s;<br>
+            animation-fill-mode: forwards;<br>
+
+          }<br>
+
+          @keyframes animation5{<br>
+            from {left: 0px;}<br>
+            to {left: 200px;background-color: blue;}<br>
+          }<br>
+
+        </p>
+        <p>Let the div element retain the style values from the last keyframe when the animation ends:</p>
+        <div class="animation5"></div>
+
+        <h3>Animation Fill Mode(Backwards)</h3>
+        <h3>Code</h3>
+
+        <p>
+          div {  <br>
+            width: 100px; <br>
+            height: 100px;<br>
+            background: yellow;<br>
+            position: relative;<br>
+            animation: animation51 3s;<br>
+            animation-fill-mode: backwards;<br>
+
+          }<br>
+
+          @keyframes animation51{<br>
+            from {left: 0px;}<br>
+            to {left: 200px;background-color: blue;}<br>
+          }<br>
+
+        </p>
+        <p>Let the div element get the style values set by the first keyframe before the animation starts (during the animation-delay period):</p>
+        <div class="animation51"></div>
+
+        <h3>Animation Fill Mode(Both)</h3>
+        <h3>Code</h3>
+
+        <p>
+          div {  <br>
+            width: 100px; <br>
+            height: 100px;<br>
+            background: yellow;<br>
+            position: relative;<br>
+            animation: animation52 3s;<br>
+            animation-fill-mode: both;<br>
+
+          }<br>
+
+          @keyframes animation52{<br>
+            from {left: 0px;}<br>
+            to {left: 200px;background-color: blue;}<br>
+          }<br>
+
+        </p>
+        <p>Let the div element get the style values set by the first keyframe before the animation starts,
+          and retain the style values from the last keyframe when the animation ends:</p>
+        <div class="animation52"></div>
+      </details>
+
+      <!-- Animation Play State -->
+      <details>
+        <summary>Animation Play State</summary>
+        <article>
+          <h3>Animation Play State</h3>
+          <p>The animation-play-state property specifies whether the animation is running or paused.</p>
+        </article>
+        <h3>Animation Play State(Paused)</h3>
+        <h3>Code</h3>
+        <p>
+          div {  <br>
+            width: 100px; <br>
+            height: 100px;<br>
+            background: yellow;<br>
+            position: relative;<br>
+            animation: animation6 3s;<br>
+            animation-play-state: paused;<br>
+
+          }<br>
+
+          @keyframes animation6{<br>
+            from {left: 0px;}<br>
+            to {left: 200px;}<br>
+          }<br>
+
+        </p>
+        <p>Pause an animation:</p>
+         <div class="animation6"></div>
+
+         <h3>Animation Play State(Running)</h3>
+         <h3>Code</h3>
+         <p>
+           div {  <br>
+             width: 100px; <br>
+             height: 100px;<br>
+             background: yellow;<br>
+             position: relative;<br>
+             animation: animation61 3s;<br>
+             animation-play-state: running;<br>
+
+           }<br>
+
+           @keyframes animation61{<br>
+             from {left: 0px;}<br>
+             to {left: 200px;}<br>
+           }<br>
+
+         </p>
+         <p>Run an animation:</p>
+          <div class="animation61"></div>
+
+
+
+       </details>
+
+      <!-- Animation Timing Function -->
+      <details>
+        <summary>Animation Timing Function</summary>
+        <article>
+          <h3>Animation Timing Function</h3>
+          <p>The animation-timing-function specifies the speed curve of an animation.
+            The speed curve defines the TIME an animation uses to change from one set of CSS styles to another.</p>
+        </article>
+        <h3>Animation Timing(linear)</h3>
+        <h3>Code</h3>
+          <p>
+           div {  <br>
+        width: 100px; <br>
+        height: 100px;<br>
+        background: yellow;<br>
+        position: relative;<br>
+        animation: animation7 3s;<br>
+        animation-timing-function: linear;
+
+
+      }<br>
+
+      @keyframes animation7{<br>
+        from {left: 0px;}<br>
+        to {left: 200px;}<br>
+      }<br>
+
+    </p>
+     <p>Play an animation with the same speed from beginning to end:</p>
+     <div class="animation7"></div>
+
+     <h3>Animation Timing(Ease)</h3>
+     <h3>Code</h3>
+       <p>
+        div {  <br>
+     width: 100px; <br>
+     height: 100px;<br>
+     background: yellow;<br>
+     position: relative;<br>
+     animation: animation71 3s;<br>
+     animation-timing-function: ease;
+   }<br>
+
+   @keyframes animation71{<br>
+     from {left: 0px;}<br>
+     to {left: 200px;}<br>
+   }<br>
+
+ </p>
+  <p> The animation has a slow start, then fast, before it ends slowly:</p>
+  <div class="animation71"></div>
+
+
+  <h3>Animation Timing(Ease-in)</h3>
+  <h3>Code</h3>
+          <p>
+           div {  <br>
+        width: 100px; <br>
+        height: 100px;<br>
+        background: yellow;<br>
+        position: relative;<br>
+        animation: animation72 3s;<br>
+        animation-timing-function: ease-in;
+      }<br>
+
+      @keyframes animation72{<br>
+        from {left: 0px;}<br>
+        to {left: 200px;}<br>
+      }<br>
+
+      </p>
+      <p>The animation has a slow start</p>
+      <div class="animation72"></div>
+
+
+        <h3>Animation Timing(Ease-out)</h3>
+        <h3>Code</h3>
+                <p>
+                 div {  <br>
+              width: 100px; <br>
+              height: 100px;<br>
+              background: yellow;<br>
+              position: relative;<br>
+              animation: animation73 3s;<br>
+              animation-timing-function: ease-out;
+            }<br>
+
+            @keyframes animation73{<br>
+              from {left: 0px;}<br>
+              to {left: 200px;}<br>
+            }<br>
+
+            </p>
+            <p>The animation has a slow end</p>
+            <div class="animation73"></div>
+
+
+            <h3>Animation Timing(Ease-in-out)</h3>
+            <h3>Code</h3>
+                    <p>
+                     div {  <br>
+                  width: 100px; <br>
+                  height: 100px;<br>
+                  background: yellow;<br>
+                  position: relative;<br>
+                  animation: animation74 3s;<br>
+                  animation-timing-function: ease-in-out;
+                }<br>
+
+                @keyframes animation74{<br>
+                  from {left: 0px;}<br>
+                  to {left: 200px;}<br>
+                }<br>
+
+                </p>
+                <p>The animation has a slow start and slow end</p>
+                <div class="animation74"></div>
+
+                <h3>Animation Timing(cubic-bezier)</h3>
+                <h3>Code</h3>
+                        <p>
+                         div {  <br>
+                      width: 100px; <br>
+                      height: 100px;<br>
+                      background: yellow;<br>
+                      position: relative;<br>
+                      animation: animation75 3s;<br>
+                      animation-timing-function: cubic-bezier(0.42,0.18,0,1);
+                    }<br>
+
+                    @keyframes animation75{<br>
+                      from {left: 0px;}<br>
+                      to {left: 200px;}<br>
+                    }<br>
+
+                    </p>
+                    <p>Define your own values in the cubic-bezier function
+                       Possible values are numeric values from 0 to 1</p>
+                    <div class="animation75"></div>
+
+
+
+      </details>
+    </section>
+
+      <!-- Main Footer -->
+    <footer>
+        <h2>CopyRights &copy; 2020 </h2>
+        <p>All Rights Reserved </p>
+        <small>Developed and Maintained by T.Karan</small>
+    </footer>
+</body>
+</html>

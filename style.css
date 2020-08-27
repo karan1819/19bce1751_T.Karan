@@ -1,0 +1,372 @@
+body{
+  font-family: "Comic Sans MS", sans-serif;
+
+}
+header , footer{
+  background: white url("anime.gif") scroll no-repeat bottom;
+  background-size: cover;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  font-size: 120%;
+
+}
+/* Main Navigation*/
+nav{
+  background-color: #182020;
+  overflow: hidden;
+}
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  marging: 0;
+
+}
+nav ul li{
+  float: left;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  display: inline-block;
+  font-size: 18px;
+}
+nav ul li a:hover{
+  background-color: #636a46;
+}
+nav ul li a.active{
+   background-color: seagreen;
+
+}
+/* Sidebar Section */
+aside{
+
+  float: left;
+  width: 200px;
+  text-align: center;
+  height: 400px;
+  overflow-y: scroll;
+}
+aside ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+aside ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 15px 25px;
+  display: inline-block;
+}
+aside ul li a:hover{
+  background-color: #636a46;
+  color: white;
+}
+
+/* Main Content Section */
+section{
+  margin-left:200px;
+  border-left: 2px solid gray;
+  padding: 10px;
+
+}
+details{
+  background-color: #636a46;
+  margin: 5px;
+  padding: 10px;
+  color: white;
+  border-radius: 50px;
+}
+article{
+  background-color: #b9bd89;
+  color: black;
+  padding: 10px;
+  border-radius: 45px;
+
+}
+summary{
+    outline: none;
+}
+/* Animation 1 */
+.animation1{
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: animation1 5s infinite;
+  animation-delay: 5s;
+}
+@keyframes animation1 {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+/* Animation 2 */
+.animation2{
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: animation2 5s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animation2 {
+  from   {background: red; left: 0px; top: 0px;}
+  to {background: yellow; left: 200px; top: 0px;}
+ }
+
+ .animation21{
+   width: 100px;
+   height: 100px;
+   background: red;
+   position: relative;
+   animation: animation21 5s infinite;
+   animation-direction: alternate;
+ }
+
+ @keyframes animation21 {
+   from   {background: red; left: 0px; top: 0px;}
+   to {background: yellow; left: 200px; top: 0px;}
+  }
+
+  .animation22{
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          position: relative;
+          animation: animation22 5s infinite;
+          animation-direction: alternate-reverse;
+        }
+
+@keyframes animation22 {
+      0%   {background-color:red; left:0px; top:0px;}
+      25%  {background-color:yellow; left:200px; top:0px;}
+      50%  {background-color:blue; left:200px; top:200px;}
+      75%  {background-color:green; left:0px; top:200px;}
+      100% {background-color:red; left:0px; top:0px;}
+}
+
+.animation23{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation: animation23 5s infinite;
+        animation-direction: reverse;
+      }
+
+@keyframes animation23 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+
+/*Animation 3*/
+.animation3 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: animation3 infinite;
+  animation-duration: 5s;
+}
+
+@keyframes animation3 {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+/*Animation 4*/
+.animation4 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: animation4 3s;
+  animation-iteration-count: 5;
+}
+
+@keyframes animation4 {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+.animation41{
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  position: relative;
+  animation: animation41 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animation41{
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+/* Animation 5*/
+.animation5 {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  position: relative;
+  animation: animation5 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animation5{
+  from {left: 0px;}
+  to {left: 200px; background-color: blue;}
+}
+
+
+ .animation51{
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  position: relative;
+  animation: animation51 3s;
+  animation-fill-mode: backwards;
+
+}
+
+@keyframes animation51{
+  from {left: 0px;}
+  to {left: 200px;background-color: blue;}
+}
+
+.animation52{
+ width: 100px;
+ height: 100px;
+ background: yellow;
+ position: relative;
+ animation: animation52 3s;
+ animation-fill-mode: both;
+
+}
+
+@keyframes animation52{
+ from {left: 0px;}
+ to {left: 200px;background-color: blue;}
+}
+
+/*Animation 6*/
+.animation6 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: animation6 5s;
+  animation-play-state: paused;
+}
+
+@keyframes animation6 {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+.animation61 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: animation61 5s;
+  animation-play-state: running;
+}
+
+@keyframes animation61 {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+/* Animation 7*/
+.animation7 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: animation7 5s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animation7{
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+.animation71 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: animation71 5s infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes animation71{
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+.animation72 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: animation72 5s infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes animation72{
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+.animation73 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: animation73 5s infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes animation73{
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+.animation74 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: animation74 5s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animation74{
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+
+.animation75 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: animation75 5s infinite;
+  animation-timing-function: cubic-bezier(0.42,0.18,0,1);
+}
+
+@keyframes animation75{
+  from {left: 0px;}
+  to {left: 200px;}
+}
